@@ -7,13 +7,11 @@
     <script>
       function findMax() {
         document.write("Arguments: ",arguments)
-        var max = 0;    
+        var sum = 0;    
         for(i = 0; i < arguments.length; i++) {
-          if (arguments[i] > max) {
-            max = arguments[i];              
-          }
+          sum+= arguments[i]
         }
-        return max;
+        return sum;
       } 
       document.getElementById("result").innerHTML = findMax(98, 4, 5, 16, 2);
     </script>
